@@ -172,6 +172,11 @@ def vandermondematrix(x,y):
 ##########################
 
 def Qmatrix(matrix):
+  """
+  Computes the Q matrix that is a orthanormal matrix for the vandermonde matrix
+  Input: matrix, in this case we want the Vandermone Matrix A
+  Output: The orthanormal matrix that takes the projection of the orthoganal vectors and subtracts them from the vector inputs from the vandermone.
+  """
   V=MatrixTranspose(matrix)
   X = [[0 for col in range(len(V[0]))] for row in range(len(V))]
   for i in range(len(V)):
@@ -249,7 +254,7 @@ def Qmatrix(matrix):
     else:
         return [[],[]]
         '''
-  Q = normilzeMatrix(X)
+  Q = normilzeMatrix(X)# normalizes the orthogonal matrix
   Q = MatrixTranspose(Q)
    # transposing the matrix to ensure proper sizing for next step in the process of finding R
   return Q
@@ -312,15 +317,6 @@ def approxPoly(c,A):
   poly = vecScalar(matVec(A,c),1)#using matrix vector multiplication function to produce results.
 
   return poly
-
-
-
-"""stability is how an algorith handles error
- 
- 
- is how a problem handles error"""
-
-
 
 
 ###################
