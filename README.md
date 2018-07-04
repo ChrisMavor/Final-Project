@@ -428,6 +428,17 @@ print(FinalDisplay)
 ##########################
 # PART 2: Written
 ##########################
+############
+# Part 2: Question 1
+############
 """
+The modified Gram-Schmidt allows for smaller truncation error by reducing the error by including a third for loop, thus increasing from the standard Gram-Schmidt method by one for loop.
+"""
+############
+# Part 2: Question 3
+############
+"""
+Condition is a way to write the algorithm, so to avoid small changes or to ananalyze the small changes. By properly conditioning the algorithm, we can significantly alter how the algorithm handles the error, so to minimize error.
 
+Stability is a way to check accuracy of the problem results. There are two types of errors uses, relative and absolute. Relative is variance from one result to the next, while absolute is the selected result compared to the over all results. Forward and Backward stability show the deviation in the problems, and by checking the stability, we can show how well the actual problem handles the computing error, rather than having the algorithm be the root cause.
 """
